@@ -1,7 +1,7 @@
 %% =======================================================================
 % Project : DAB SPS Control
 %
-% File : DAB_CL.m
+% File : DAB_CL_Pure_R.m
 %
 % Description:
 % MATLAB script for parameter calculation of the SPS controlled
