@@ -17,3 +17,19 @@ This repository presents MATLAB/Simulink implementations of Single Phase Shift (
 Rather than focusing on a single simulation model, this repository demonstrates the complete engineering workflow—from analytical design and parameter calculation to Simulink implementation and performance verification. The objective is to provide a clear understanding of how different SPS control approaches influence converter operation under various design goals.
 
 This project was carried out as part of my self-learning and research activities in Power Electronics to strengthen my understanding of DAB converter design, control strategies, and simulation-based validation using MATLAB and Simulink.
+
+## Objectives
+
+The primary objectives of this project are:
+
+- Develop a comprehensive understanding of the operating principles of the Dual Active Bridge (DAB) DC–DC converter under Single Phase Shift (SPS) control.
+
+- Implement and validate published SPS-based design methodologies in MATLAB and Simulink to reproduce their reported operating characteristics.
+
+- Investigate the influence of different SPS design approaches on key converter performance metrics, including Zero Voltage Switching (ZVS) operating range and converter efficiency.
+
+- Analyze converter behavior through steady-state simulation, electrical waveforms, and power transfer characteristics.
+
+- Develop a script-assisted Constant Current–Constant Voltage (CC–CV) charging model using SPS modulation for a resistive load.
+
+- Establish a modular simulation framework that can serve as the foundation for implementing more advanced DAB modulation strategies such as Extended Phase Shift (EPS), Dual Phase Shift (DPS), and Triple Phase Shift (TPS).
