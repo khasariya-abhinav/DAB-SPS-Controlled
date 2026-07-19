@@ -33,3 +33,34 @@ The primary objectives of this project are:
 - Develop a script-assisted Constant Current–Constant Voltage (CC–CV) charging model using SPS modulation for a resistive load.
 
 - Establish a modular simulation framework that can serve as the foundation for implementing more advanced DAB modulation strategies such as Extended Phase Shift (EPS), Dual Phase Shift (DPS), and Triple Phase Shift (TPS).
+
+## Project Workflow
+
+The development of this project followed a structured engineering workflow, beginning with the study of published research and progressing through analytical design, simulation development, and performance evaluation.
+
+```text
+Research Paper Review
+        │
+        ▼
+Understanding DAB Operation & SPS Modulation
+        │
+        ▼
+Analytical Design Methodology
+        │
+        ▼
+MATLAB Design Scripts
+        │
+        ▼
+Simulink Model Development
+        │
+        ├──────────────┐
+        ▼              ▼
+   ZVS Design      Maximum Efficiency Design
+        │              │
+        └──────┬───────┘
+               ▼
+      CC-CV Charging Model
+               │
+               ▼
+Simulation Results & Performance Verification
+```
