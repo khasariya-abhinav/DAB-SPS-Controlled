@@ -12,6 +12,14 @@
 
 The Dual Active Bridge (DAB) converter is a bidirectional isolated DC–DC converter that is widely used in electric vehicles, battery energy storage systems, renewable energy interfaces, and high-power DC microgrids because of its high efficiency, galvanic isolation, and capability for bidirectional power transfer.
 
+<p align="center">
+  <img src="images/DAB_diagram.png" alt="Schematic diagram for the Dual active Bridge (DAB) converter" width="850">
+</p>
+
+<p align="center">
+  <em><strong>Figure 1.</strong> Schematic diagram for the Dual active Bridge (DAB) converter.</em>
+</p>
+
 This repository presents MATLAB/Simulink implementations of Single Phase Shift (SPS) controlled DAB converters developed to study and compare different SPS design methodologies reported in the literature. The work includes the reproduction and evaluation of published design strategies aimed at extending the Zero Voltage Switching (ZVS) operating range, improving converter efficiency, and implementing a Constant Current–Constant Voltage (CC–CV) charging strategy for a resistive load.
 
 Rather than focusing on a single simulation model, this repository demonstrates the complete engineering workflow—from analytical design and parameter calculation to Simulink implementation and performance verification. The objective is to provide a clear understanding of how different SPS control approaches influence converter operation under various design goals.
@@ -88,6 +96,8 @@ This repository contains three MATLAB/Simulink implementations of Single Phase S
 ### 1. SPS Design for Extended ZVS Range
 
 The repository includes three MATLAB/Simulink implementations of Single Phase Shift (SPS) controlled Dual Active Bridge (DAB) converters. Each model was developed with a distinct engineering objective, ranging from extending the Zero Voltage Switching (ZVS) operating range to implementing a Constant Current–Constant Voltage (CC–CV) charging strategy.
+
+
 
 | Model | Engineering Objective | Based On | Key Contribution |
 |:------|:----------------------|:---------|:-----------------|
