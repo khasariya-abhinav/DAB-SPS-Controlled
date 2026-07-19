@@ -64,3 +64,145 @@ Simulink Model Development
                ▼
 Simulation Results & Performance Verification
 ```
+
+## Repository Organization
+
+The repository is organized to separate simulation models, analytical scripts, documentation, and simulation results, making the project easy to understand, reproduce, and extend.
+
+| Directory | Description |
+|-----------|-------------|
+| **docs/** | Project documentation and references to the research papers used in this work. |
+| **models/** | MATLAB/Simulink (`.slx`) implementations of the SPS-controlled DAB converter. |
+| **scripts/** | MATLAB (`.m`) scripts for converter design, parameter calculation, and simulation support. |
+| **results/** | Simulation waveforms, plots, and performance comparison figures. |
+| **images/** | Images, diagrams, and screenshots used in the project documentation and README. |
+
+The repository has been structured so that each component of the project can be understood independently while maintaining a clear workflow from analytical design to simulation and performance evaluation.
+
+## Simulation Models
+
+This repository contains three MATLAB/Simulink implementations of Single Phase Shift (SPS) controlled Dual Active Bridge (DAB) converters. The models are based on established literature and demonstrate different design objectives ranging from extending the Zero Voltage Switching (ZVS) operating range to implementing a Constant Current–Constant Voltage (CC–CV) charging strategy.
+
+---
+
+### 1. SPS Design for Extended ZVS Range
+
+The repository includes three MATLAB/Simulink implementations of Single Phase Shift (SPS) controlled Dual Active Bridge (DAB) converters. Each model was developed with a distinct engineering objective, ranging from extending the Zero Voltage Switching (ZVS) operating range to implementing a Constant Current–Constant Voltage (CC–CV) charging strategy.
+
+| Model | Engineering Objective | Based On | Key Contribution |
+|:------|:----------------------|:---------|:-----------------|
+| **Model 1** | Extend the Zero Voltage Switching (ZVS) operating range | Rodríguez *et al.* | Demonstrates an SPS design methodology focused on achieving wider soft-switching operation. |
+| **Model 2** | Maximize converter efficiency at rated operating conditions | Rodríguez *et al.* | Implements an efficiency-oriented SPS design methodology to reduce converter losses. |
+| **Model 3** | Constant Current–Constant Voltage (CC–CV) charging using SPS control | Fundamental DAB theory by Mi *et al.* | MATLAB-assisted analytical design and Simulink implementation of a closed-loop SPS-controlled DAB converter for a resistive load. |
+
+**Objective**
+
+Increase the Zero Voltage Switching (ZVS) operating range of the DAB converter.
+
+**Description**
+
+This model implements the ZVS-oriented design methodology proposed by **Rodríguez et al.**, demonstrating how appropriate converter design choices can significantly extend the soft-switching operating region while maintaining effective power transfer.
+
+**Reference**
+
+Rodríguez, A., Vázquez, A., Lamar, D. G., Hernando, M. M., & Sebastián, J., *Different Purpose Design Strategies and Techniques to Improve the Performance of a Dual Active Bridge With Phase-Shift Control.*
+
+---
+
+### 2. SPS Design for Maximum Efficiency
+
+**Objective**
+
+Improve converter efficiency under rated operating conditions.
+
+**Description**
+
+This model implements the efficiency-oriented design methodology proposed by **Rodríguez et al.**, where converter parameters are selected to minimize conduction losses and improve overall efficiency instead of maximizing the ZVS operating range.
+
+**Reference**
+
+Rodríguez, A., Vázquez, A., Lamar, D. G., Hernando, M. M., & Sebastián, J., *Different Purpose Design Strategies and Techniques to Improve the Performance of a Dual Active Bridge With Phase-Shift Control.*
+
+---
+
+### 3. SPS-Based Constant Current–Constant Voltage (CC–CV) Charging
+
+**Objective**
+
+Develop a closed-loop SPS-controlled DAB converter capable of Constant Current–Constant Voltage charging of a resistive load.
+
+**Description**
+
+Unlike the previous two models, this implementation combines analytical parameter calculations using MATLAB with a Simulink-based closed-loop DAB model. The controller and charging strategy were developed by extending the fundamental DAB operating principles presented by **Mi et al.**, demonstrating practical implementation of SPS modulation for CC–CV operation.
+
+**Reference**
+
+Mi, C., Bai, H., Wang, C., & Gargies, S., *Operation, Design and Control of Dual H-Bridge-Based Isolated Bidirectional DC–DC Converter.*
+
+## Software & Tools
+
+The project was developed and validated using the following software tools:
+
+| Software | Purpose |
+|----------|---------|
+| **MATLAB** | Analytical calculations and converter parameter design |
+| **Simulink** | Dynamic modelling and simulation of the DAB converter |
+| **Simscape Electrical** | Power electronics component modelling |
+| **Git & GitHub** | Version control and project documentation |
+
+## Simulation Specifications
+
+The simulations were performed using the following converter specifications.
+
+| Parameter | Symbol | Value |
+|-----------|:------:|------:|
+| Input Voltage | $V_1$ | 20 V |
+| Output Voltage | $V_2$ | 100 V *(or your value)* |
+| Switching Frequency | $f_s$ | 100 kHz |
+| Transformer Turns Ratio | $n$ | 5 |
+| Leakage Inductance | $L$ | calculated by the script |
+| Output Capacitance | $C$ | calculated by the script |
+| Load | $R$ | calculated by the script |
+| Control Strategy | — | Single Phase Shift (SPS) |
+
+## Engineering Highlights
+
+- MATLAB/Simulink implementation of three SPS-controlled DAB converter models.
+- Comparative study of ZVS-oriented and efficiency-oriented converter design methodologies.
+- Script-assisted converter parameter calculation.
+- Closed-loop Constant Current–Constant Voltage (CC–CV) charging implementation.
+- Performance evaluation through simulation-based verification.
+- Modular project structure for future implementation of EPS, DPS, and TPS modulation strategies.
+
+## Key Learning Outcomes
+
+- Understanding of DAB power transfer using SPS modulation.
+- Practical implementation of published converter design methodologies.
+- MATLAB-based analytical design and parameter calculation.
+- Development and verification of Simulink models.
+- Comparative evaluation of ZVS-oriented and efficiency-oriented converter designs.
+- Foundation for implementing advanced modulation techniques such as EPS, DPS, and TPS.
+
+## Future Work
+
+The current repository focuses on Single Phase Shift (SPS) modulation. Future developments include:
+
+- Extended Phase Shift (EPS) modulation.
+- Dual Phase Shift (DPS) implementation.
+- Triple Phase Shift (TPS) implementation.
+- Optimization of operating trajectories.
+- Reduction of circulating current and backflow power.
+- Lookup table (LUT) generation for optimal control.
+- Experimental hardware validation.
+
+## References
+
+The complete bibliography of the research papers used in this project is available in:
+
+```text
+docs/references.md
+```
+
+## Acknowledgements
+
+This work was inspired by the research experience gained during my Summer Research Internship at IIT Kanpur. I sincerely thank my faculty supervisor and mentors for providing the opportunity, guidance, and exposure to advanced research in Power Electronics, which motivated the continued exploration presented in this repository.
