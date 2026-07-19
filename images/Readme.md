@@ -1,1 +1,1 @@
-Images and cutures of the models.
+This folder contains the images and captures of the models.
