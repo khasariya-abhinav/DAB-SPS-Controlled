@@ -191,6 +191,55 @@ The simulations were performed using the following converter specifications.
 | Load | $R$ | calculated by the script |
 | Control Strategy | — | Single Phase Shift (SPS) |
 
+## Results
+
+### Output Parameters
+
+<p align="center">
+  <img src="results/SPS_CL_op.png" width="800">
+</p>
+<p align="center">
+  <em><strong>Figure 7.</strong> Output power, current and voltage of the SPS-controlled DAB converter under cascaded control CC-CV.</em>
+</p>
+
+### Input Parameters
+
+<p align="center">
+  <img src="results/SPS_CL_ip_step1.png" width="800">
+</p>
+<p align="center">
+  <em><strong>Figure 7.</strong> Leakage Inductor Parameters for Step 1 i.e. at 80% load.</em>
+</p>
+
+<p align="center">
+  <img src="results/SPS_CL_ip_step2.png" width="800">
+</p>
+<p align="center">
+  <em><strong>Figure 7.</strong> Leakage Inductor Parameters for Step 2 i.e. at full load.</em>
+</p>
+
+### Frequency Response (Bode Plots)
+
+<table align="center">
+<tr>
+<td align="center">
+<img src="results/Bode_OL.png" width="300"><br>
+<b>Figure 1.</b> Bode magnitude response.
+</td>
+
+<td align="center">
+<img src="results/Bode_individual_OL.png" width="300"><br>
+<b>Figure 2.</b> Bode phase response.
+</td>
+
+<td align="center">
+<img src="results/Bode_CL.png" width="300"><br>
+<b>Figure 3.</b> Combined frequency response.
+</td>
+</tr>
+</table>
+
+
 ## Engineering Highlights
 
 - MATLAB/Simulink implementation of three SPS-controlled DAB converter models.
