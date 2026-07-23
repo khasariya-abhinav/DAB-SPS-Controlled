@@ -220,24 +220,28 @@ The simulations were performed using the following converter specifications.
 
 ### Frequency Response (Bode Plots)
 
-<table align="center width="33.33%">
-<tr>
-<td align="center"  width="33.33% >
-<img src="Results/Bode_OL.png" width="100%"><br>
-<b>Figure 1.</b> 
-</td>
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="33.33%">
+      <img src="Results/Bode_OL.png" width="100%"><br>
+      <b>(a)</b> Open-Loop Bode Plot
+    </td>
 
-<td align="center"  width="33.33% >
-<img src="Results/Bode_individual_OL.png" width="100%"><br>
-<b>Figure 2.</b>
-</td>
+    <td align="center" width="33.33%">
+      <img src="Results/Bode_individual_OL.png" width="100%"><br>
+      <b>(b)</b> Individual Open-Loop Bode Plot
+    </td>
 
-<td align="center" width="33.33% > 
-<img src="Results/Bode_CL.png" width="100%"><br>
-<b>Figure 3.</b> 
-</td>
-</tr>
+    <td align="center" width="33.33%">
+      <img src="Results/Bode_CL.png" width="100%"><br>
+      <b>(c)</b> Closed-Loop Bode Plot
+    </td>
+  </tr>
 </table>
+
+<p align="center">
+<i><b>Figure 1.</b> Frequency response analysis of the SPS-controlled Dual Active Bridge (DAB) converter.</i>
+</p>
 
 ## Engineering Highlights
 
