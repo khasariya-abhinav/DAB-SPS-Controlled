@@ -242,8 +242,6 @@ The simulations were performed using the following converter specifications.
 </tr>
 </table>
 
-Edit this code
-
 <p align="center">
 <i><b>Figure 1.</b> Frequency response analysis of the SPS-controlled Dual Active Bridge (DAB) converter.</i>
 </p>
